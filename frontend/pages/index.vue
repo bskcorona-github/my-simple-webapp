@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Calendar/>
     <PomodoroTimer/>
     <MessageDisplay/>
     <Counter />

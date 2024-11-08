@@ -72,3 +72,36 @@ body.dark .header {
   gap: 15px;
 }
 
+
+.calendar {
+  width: 200px; /* サイズを半分に */
+  position: fixed;
+  top: 50px;
+  right: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  z-index: 1000;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.day-name {
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+.day {
+  padding: 5px;
+  border: 1px solid #ddd;
+  font-size: 0.8em;
+}
+
+.today {
+  background-color: #ffe0b2;
+  font-weight: bold;
+}
