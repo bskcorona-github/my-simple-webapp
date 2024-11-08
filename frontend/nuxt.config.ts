@@ -8,5 +8,10 @@ export default defineNuxtConfig({
     preference: 'system', // ユーザーのシステム設定をデフォルトに
     fallback: 'light',     // カラーモードが不明な場合はライトモードを使用
     classSuffix: '',       // クラス名を `dark` と `light` のみにする
+  },
+  app: {
+    head: {
+      title: 'My Simple Nuxt App', // ここでタイトルを設定
+    },
   }
 })

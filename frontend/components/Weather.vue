@@ -13,7 +13,7 @@
   
   const fetchWeather = async () => {
     try {
-      const response = await fetch(`http://localhost:3001/api/weather?city=Okinawa`)
+      const response = await fetch(`http://localhost:3001/api/weather?city=Naha`)
       const data = await response.json()
       weatherInfo.value = `${data.weather[0].description} ${data.main.temp}°C`
       weatherIcon.value = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`

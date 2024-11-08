@@ -36,6 +36,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     const newTodo = { id: idCounter++, text };
     todos.push(newTodo);
     res.status(201).json(newTodo);
+    console.log(`タスク[${text}]が追加されました`);
   } else if (req.method === 'DELETE') {
     // タスクの削除
     const { id } = req.body;

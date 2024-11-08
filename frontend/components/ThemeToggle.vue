@@ -25,14 +25,5 @@
   })
   </script>
   
-  <style scoped>
-  .toggle-button {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    padding: 8px 12px;
-    z-index: 1000;
-  }
-  
-  </style>
+
   

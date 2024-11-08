@@ -1,6 +1,5 @@
 
 .clock {
-    position: fixed;
     top: 10px;
     left: 10px;
     font-size: 1.2em;
@@ -17,8 +16,8 @@
   margin-right: 20px;
 }
 .weather-icon {
-  width: 27px;
-  height: 27px;
+  width: 30px;
+  height: 30px;
   vertical-align: middle;
 }
 .visit{
@@ -26,28 +25,12 @@
 }
 .toggle-button {
   position: fixed;
-  top: 10px;
+  top: 0px;
   right: 10px;
-  padding: 8px 12px;
+  padding: 2px 4px; 
   z-index: 1000; /* 他の要素より前面に表示するために調整可能 */
 }
-h1 {
-  margin-top: 50px;
-}
-.small-screen h1 {
-  font-size: 1.5em;
-}
-.small-screen p,
-.small-screen h2 {
-  font-size: 1em;
-}
-.large-screen h1 {
-  font-size: 2.5em;
-}
-.large-screen p,
-.large-screen h2 {
-  font-size: 1.5em;
-}
+
 body {
   background-color: #ffffff;
   color: #000000;
@@ -59,3 +42,33 @@ body.dark {
 button {
   margin-top: 10px;
 }
+.pomodoro-timer {
+  display: flexbox;
+  text-align: center;
+  margin-top:30px ;
+}
+.main-content {
+  margin-top: 60px; /* ヘッダーの高さに合わせてマージンを設定 */
+}
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f5f5f5; /* ライトモードの背景色 */
+  color: black;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+body.dark .header {
+  background-color: #333333; /* ダークモードの背景色 */
+  color: #ffffff;
+}
+.header-content {
+  display: flex;
+  gap: 15px;
+}
+

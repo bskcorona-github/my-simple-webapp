@@ -1,12 +1,13 @@
 <template>
-    <div>
-      <header>
-        <h1>My Simple Nuxt App</h1>
-      </header>
-      <main>
-        <NuxtPage />
-      </main>
-    </div>
-  </template>
-  
-  
+  <div>
+    <Header />
+    <main class="main-content">
+      <NuxtPage />
+    </main>
+  </div>
+</template>
+
+<script setup>
+import Header from '~/components/Header.vue'
+</script>
+

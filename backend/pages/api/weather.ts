@@ -36,4 +36,5 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   }catch {
   res.status(500).json({ message: "天気情報の取得に失敗しました" });
 }
+
 }
