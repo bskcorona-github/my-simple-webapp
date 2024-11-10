@@ -1,16 +1,15 @@
-
 .clock {
-    top: 10px;
-    left: 10px;
-    font-size: 1.2em;
-    font-weight: bold;
-    display: inline-flex;
-    align-items: center; 
-  }
-  
-  .date {
-    margin-right: 10px;
-  }
+  top: 10px;
+  left: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+}
+
+.date {
+  margin-right: 10px;
+}
 .weather {
   margin-left: 10px;
   margin-right: 20px;
@@ -20,14 +19,14 @@
   height: 30px;
   vertical-align: middle;
 }
-.visit{
-    margin-left: 10px;
+.visit {
+  margin-left: 10px;
 }
 .toggle-button {
   position: fixed;
   top: 0px;
   right: 10px;
-  padding: 2px 4px; 
+  padding: 2px 4px;
   z-index: 1000; /* 他の要素より前面に表示するために調整可能 */
 }
 
@@ -45,7 +44,7 @@ button {
 .pomodoro-timer {
   display: flexbox;
   text-align: center;
-  margin-top:30px ;
+  margin-top: 30px;
 }
 .main-content {
   margin-top: 60px; /* ヘッダーの高さに合わせてマージンを設定 */
@@ -72,17 +71,18 @@ body.dark .header {
   gap: 15px;
 }
 
-
 .calendar {
-  width: 200px; /* サイズを半分に */
-  position: fixed;
+  width: 200px;
+  position: absolute; /* fixedからabsoluteに変更 */
   top: 50px;
   right: 20px;
   padding: 10px;
   border: 1px solid #ddd;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  z-index: 1000;
+  z-index: 10;
+  max-width: 100%; /* 横幅をデバイスに収める */
+  overflow: hidden;
 }
 
 .calendar-grid {
@@ -104,4 +104,43 @@ body.dark .header {
 .today {
   background-color: #ffe0b2;
   font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .calendar {
+    top: auto; /* 上からの固定位置を解除 */
+    bottom: 20px; /* 画面下に配置 */
+    right: 50%; /* 中央寄せ */
+    transform: translateX(50%); /* 位置を中央に調整 */
+    max-width: 90%; /* 横幅をデバイス幅に合わせる */
+  }
+}
+
+.cat-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  position: absolute; /* fixed ではなく absolute に */
+  top: 400px;
+  right: 20px;
+  padding: 10px;
+  max-width: 100%; /* 横幅に制限をかけて見切れないように */
+  overflow: hidden;
+}
+
+button {
+  padding: 8px 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .cat-image-container {
+    top: auto; /* 上端からの位置をリセット */
+    bottom: 20px; /* 画面下に配置 */
+    right: 50%; /* 中央寄せ */
+    transform: translateX(50%); /* 中央寄せを確実に */
+    max-width: 90%; /* 横幅をデバイスに合わせる */
+  }
 }

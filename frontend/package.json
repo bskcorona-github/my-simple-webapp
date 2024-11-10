@@ -8,11 +8,11 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-        "start": "nuxt start"
+    "start": "nuxt start"
   },
   "dependencies": {
     "@nuxtjs/color-mode": "^3.5.2",
-    "nuxt": "^3.14.0",
+    "nuxt": "^3.14.159",
     "vue": "latest",
     "vue-router": "latest"
   }

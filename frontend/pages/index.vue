@@ -1,10 +1,11 @@
 <template>
   <div>
-    <Calendar/>
-    <PomodoroTimer/>
-    <MessageDisplay/>
+    <Calendar />
+    <CatImage />
+    <PomodoroTimer />
+    <MessageDisplay />
     <Counter />
     <TodoList />
+    <App />
   </div>
 </template>
-
