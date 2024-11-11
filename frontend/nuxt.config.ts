@@ -11,7 +11,7 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: 'My Simple Nuxt App', // ここでタイトルを設定
-    },
+      titleTemplate: 'NuxtNextApp  - %s ',
   }
-})
+}
+})  
